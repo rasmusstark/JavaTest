@@ -8,6 +8,7 @@ public class CircleMain {
         System.out.println(circle1.calculateCircumference());
         System.out.println(circle1.hasSmallArea());
 
+        //hejhej
 
     }
 }

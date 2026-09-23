@@ -11,6 +11,8 @@ public class Circle {
 
     }
 
+    //Hejhej
+
     public double calculateArea() {
         double area = Math.PI * radius * radius;
         return area;
