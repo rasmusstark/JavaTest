@@ -19,7 +19,25 @@ public class TestCounter {
 }
 
     @Test
-    public void testTotalRows() {
+    public void testTotalCharactersMultipleRows() {
+        Counter counter = new Counter();
+        counter.addRowsAndCharacters("Hej jag heter Rasmus");
+        counter.addRowsAndCharacters("Jag bor i Stockholm");
+        counter.addRowsAndCharacters("Hej då");
+
+        int expected = 45;
+        int actual = counter.getCharacters();
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testEmptyRow() {
+        Counter counter = new Counter();
+        counter.addRowsAndCharacters("");
+
+        assertEquals(1, counter.getRows());
+        assertEquals(0, counter.getCharacters());
 
     }
 }
