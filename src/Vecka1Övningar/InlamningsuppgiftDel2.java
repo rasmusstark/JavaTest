@@ -1,4 +1,4 @@
-package inlamningsuppgift;
+package Vecka1Övningar;
 
 import java.util.Scanner;
 
